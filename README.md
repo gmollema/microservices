@@ -4,7 +4,7 @@ This project contains a limits-service microservice.
 This service is a RESTful web service which can be called to retrieve the mimimum and maximum value (uri /limits)
 The goal of this project is to:
 
-- Centralize the properties of all (instances of) miscroservices in order to improve maintainability
+1 Centralize the properties of all (instances of) miscroservices for all environments in order to improve maintainability
 
 Process of centralizing the properties (minimum and maximum values)
 - 1st step: hardcoded: In the first place directly hard coded from the RESTful controller
