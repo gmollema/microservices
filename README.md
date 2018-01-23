@@ -1,9 +1,12 @@
 # microservices
 
 This project contains a limits-service microservice. 
-This service is a RESTful web service which can be called to retrieved the mimimum and maximum value (uri /limits)
+This service is a RESTful web service which can be called to retrieve the mimimum and maximum value (uri /limits)
+The goal of this project is to:
 
-These properties 
+- Centralize the properties of all (instances of) miscroservices in order to improve maintainability
+
+Process of centralizing the properties (minimum and maximum values)
 - 1st step: hardcoded: In the first place directly hard coded from the RESTful controller
 - 2nd step: read from application.properties: They were moved to the application.properties, a new Configuration class with @ConfigurationProperties annotation read them (Spring boot way) and the Rest Controller used this Configuration class to retrieve the values.
 - TODO - 3rd step: Create Git repo for storing properties of all microservices.
